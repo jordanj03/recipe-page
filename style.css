@@ -158,3 +158,9 @@ main #ingredients ul li {
   color: hsl(14, 45%, 36%);
   font-weight: 800;
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 80%;
+  }
+}
