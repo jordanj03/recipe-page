@@ -21,11 +21,16 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
+![alt text](image.png)
+
 ### Links
 
-- Live Site URL:
+- Live Site URL: [GitHub Pages](https://jordanj03.github.io/recipe-page)
 
 ## My process
+
+- Wrote HTML Markup
+- Styled each section individually
 
 ### Built with
 
@@ -34,6 +39,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Flexbox
 
 ### What I learned
+
+- Better semantic HTML
+- Better naming system
+- Better utilisation of HTML tags in CSS
 
 ## Author
 

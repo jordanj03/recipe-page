@@ -23,6 +23,7 @@ body {
   justify-content: center;
   padding: 8rem 0;
   color: hsl(30, 10%, 34%);
+  line-height: 1.5;
 }
 
 h1,
@@ -35,6 +36,7 @@ h6 {
   color: hsl(14, 45%, 36%);
   font-weight: 400;
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 p {
@@ -47,25 +49,112 @@ section {
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
+section:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
 img {
   width: 100%;
   border-radius: 16px;
 }
 
-ol,
 ul {
   list-style-position: inside;
+  line-height: 1.8rem;
+}
+
+li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 800;
+}
+
+span {
+  font-weight: 800;
 }
 
 .container {
   max-width: 40%;
   height: 100%;
   background: #fff;
-  padding: 3rem;
-  border-radius: 16px;
+  padding: 2.5rem;
+  border-radius: 30px;
 }
 
 main .lead {
   font-size: 2.5rem;
   color: hsl(24, 5%, 18%);
+}
+
+main .info-container {
+  background: hsl(330, 100%, 98%);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+}
+
+main .info-container .info-head {
+  font-family: "Outfit";
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0.2rem;
+  font-size: 1.5rem;
+}
+
+main .info-container ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+main .info-container ul li {
+  padding-left: 10px;
+}
+
+main #ingredients ul {
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+main #ingredients ul li {
+  padding-left: 1rem;
+}
+
+#instructions ol {
+  padding-left: 2rem;
+}
+
+#instructions ol li {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#nutrition .nutrition {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#nutrition .nutrition p {
+  margin: 0;
+  padding: 0.8rem;
+}
+
+#nutrition .nutrition > * {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+#nutrition .nutrition > *:nth-child(-n + 2) {
+  border: none;
+}
+
+#nutrition .nutrition > *:nth-child(odd) {
+  margin-left: 1rem;
+}
+
+#nutrition .nutrition:first-child {
+  border-top: none;
+}
+
+#nutrition .nutrition .nut-text {
+  color: hsl(332, 51%, 32%);
+  font-weight: 800;
 }
