@@ -36,7 +36,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 - HTML5
 - CSS3
-- Flexbox
+- Grid
 
 ### What I learned
 
